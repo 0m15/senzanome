@@ -1,5 +1,5 @@
 ---
-title: Noname - a simple static content generator powering this site
+title: Senza nome - a simple static content generator powering this site
 date: 2020-01-07
 ---
 

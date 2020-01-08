@@ -50,7 +50,7 @@ def create_index(src, list_template_src, item_template_src):
 
     for path in paths:
         node = parse(path)
-        node.metadata['url'] = get_out_filename(file.name)
+        node.metadata['url'] = get_out_filename(path)
         item = render(item_template, node.metadata)
         items.append(item)
 
@@ -92,10 +92,10 @@ def create_nodes(src, template_src):
     paths = glob.glob(src)
     
     print(" ")
-    print(" Building from %d source(s)" % len(paths))
+    print(" Building %d source(s) from %s" % (len(paths), src))
 
     for path in paths:
         content = parse(path)
-        filename = get_out_filename(file.name)
+        filename = get_out_filename(path)
         create_node(filename, content, template_src)
 
