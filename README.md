@@ -1,7 +1,7 @@
 # Senzanome
 
 A dead simple static content generator, powering my site.
-Written in python3, with **markdown2** as the only dep.
+Written in python3, with **markdown2** as the only dependency.
 
 ## How-to
 
